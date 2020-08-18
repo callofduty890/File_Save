@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml;
 using ClassLibrary;//引用自定义的函数-动态链接库
 
 namespace 文件操作与日志记录
@@ -134,6 +135,32 @@ namespace 文件操作与日志记录
             this.textBoxEx8.Text = objInformation.Acceleration.ToString();
             this.textBoxEx6.Text = objInformation.Deceleration.ToString();
             this.textBoxEx5.Text = objInformation.Maxspeed.ToString();
+        }
+
+        private void ucBtnExt8_BtnClick(object sender, EventArgs e)
+        {
+            //实例化对象
+            XmlConfigUtil configxml = new XmlConfigUtil("Save.xml");
+            //==========================保存界面数据
+            //初始速度
+            configxml.Write(this.textBoxEx11.Text, "information", "speed");
+            //加速度
+            configxml.Write(this.textBoxEx12.Text, "information", "Acceleration");
+            //减速度
+            configxml.Write(this.textBoxEx10.Text, "information", "Deceleration");
+            //最大速度
+            configxml.Write(this.textBoxEx9.Text, "information", "Maxspeed");
+        }
+        //读取xml配置文件
+        private void ucBtnExt7_BtnClick(object sender, EventArgs e)
+        {
+            //实例化对象
+            XmlConfigUtil configxml = new XmlConfigUtil("Save.xml");
+            //读取xml文件
+            this.textBoxEx11.Text = configxml.Read("information", "speed");
+            this.textBoxEx12.Text = configxml.Read("information", "Acceleration");
+            this.textBoxEx10.Text = configxml.Read("information", "Deceleration");
+            this.textBoxEx9.Text = configxml.Read("information", "Maxspeed");
         }
     }
 }

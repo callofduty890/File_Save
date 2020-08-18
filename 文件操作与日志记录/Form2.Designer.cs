@@ -158,7 +158,7 @@
             this.ucBtnExt7.TabStop = false;
             this.ucBtnExt7.TipsColor = System.Drawing.Color.Gold;
             this.ucBtnExt7.TipsText = "";
-            this.ucBtnExt7.BtnClick += new System.EventHandler(this.ucBtnExt4_BtnClick);
+            this.ucBtnExt7.BtnClick += new System.EventHandler(this.ucBtnExt7_BtnClick);
             // 
             // ucBtnExt8
             // 
@@ -185,7 +185,7 @@
             this.ucBtnExt8.TabStop = false;
             this.ucBtnExt8.TipsColor = System.Drawing.Color.LawnGreen;
             this.ucBtnExt8.TipsText = "";
-            this.ucBtnExt8.BtnClick += new System.EventHandler(this.ucBtnExt3_BtnClick);
+            this.ucBtnExt8.BtnClick += new System.EventHandler(this.ucBtnExt8_BtnClick);
             // 
             // label9
             // 
