@@ -70,12 +70,17 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.ucBtnExt9 = new HZH_Controls.Controls.UCBtnExt();
+            this.ucBtnExt10 = new HZH_Controls.Controls.UCBtnExt();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControlExt1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlExt1
@@ -844,6 +849,9 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Controls.Add(this.ucBtnExt10);
+            this.tabPage2.Controls.Add(this.ucBtnExt9);
             this.tabPage2.Location = new System.Drawing.Point(4, 54);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
@@ -883,6 +891,70 @@
             this.tabPage5.Text = "DataGiredView";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // ucBtnExt9
+            // 
+            this.ucBtnExt9.BackColor = System.Drawing.Color.Transparent;
+            this.ucBtnExt9.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt9.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt9.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt9.BtnText = "写 入 CSV";
+            this.ucBtnExt9.ConerRadius = 5;
+            this.ucBtnExt9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt9.EnabledMouseEffect = false;
+            this.ucBtnExt9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucBtnExt9.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt9.IsRadius = true;
+            this.ucBtnExt9.IsShowRect = true;
+            this.ucBtnExt9.IsShowTips = false;
+            this.ucBtnExt9.Location = new System.Drawing.Point(36, 469);
+            this.ucBtnExt9.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt9.Name = "ucBtnExt9";
+            this.ucBtnExt9.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.ucBtnExt9.RectWidth = 1;
+            this.ucBtnExt9.Size = new System.Drawing.Size(184, 60);
+            this.ucBtnExt9.TabIndex = 0;
+            this.ucBtnExt9.TabStop = false;
+            this.ucBtnExt9.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucBtnExt9.TipsText = "";
+            this.ucBtnExt9.BtnClick += new System.EventHandler(this.ucBtnExt9_BtnClick);
+            // 
+            // ucBtnExt10
+            // 
+            this.ucBtnExt10.BackColor = System.Drawing.Color.White;
+            this.ucBtnExt10.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt10.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt10.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt10.BtnText = "读 取 CSV";
+            this.ucBtnExt10.ConerRadius = 5;
+            this.ucBtnExt10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt10.EnabledMouseEffect = false;
+            this.ucBtnExt10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucBtnExt10.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt10.IsRadius = true;
+            this.ucBtnExt10.IsShowRect = true;
+            this.ucBtnExt10.IsShowTips = false;
+            this.ucBtnExt10.Location = new System.Drawing.Point(895, 469);
+            this.ucBtnExt10.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt10.Name = "ucBtnExt10";
+            this.ucBtnExt10.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.ucBtnExt10.RectWidth = 1;
+            this.ucBtnExt10.Size = new System.Drawing.Size(184, 60);
+            this.ucBtnExt10.TabIndex = 0;
+            this.ucBtnExt10.TabStop = false;
+            this.ucBtnExt10.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucBtnExt10.TipsText = "";
+            this.ucBtnExt10.BtnClick += new System.EventHandler(this.ucBtnExt10_BtnClick);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(24, 7);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 27;
+            this.dataGridView1.Size = new System.Drawing.Size(1055, 442);
+            this.dataGridView1.TabIndex = 1;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -902,6 +974,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -950,5 +1024,8 @@
         private HZH_Controls.Controls.TextBoxEx textBoxEx6;
         private HZH_Controls.Controls.TextBoxEx textBoxEx7;
         private HZH_Controls.Controls.TextBoxEx textBoxEx8;
+        private HZH_Controls.Controls.UCBtnExt ucBtnExt9;
+        private HZH_Controls.Controls.UCBtnExt ucBtnExt10;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

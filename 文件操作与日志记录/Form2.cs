@@ -162,5 +162,32 @@ namespace 文件操作与日志记录
             this.textBoxEx10.Text = configxml.Read("information", "Deceleration");
             this.textBoxEx9.Text = configxml.Read("information", "Maxspeed");
         }
+
+        private void ucBtnExt9_BtnClick(object sender, EventArgs e)
+        {
+            //学号	 姓名	班级	电话号码
+            string[] a = new string[] { "学号","姓名", "班级", "电话号码" };
+            string[] b = new string[] { "1", "A", "视觉班", "123-456" };
+            //构建表格内容
+            List<string[]> result = new List<string[]>();
+            result.Add(a);
+            result.Add(b);
+            //往表格中写入 最后的参数位是否追加 true为追加/false不追加
+            CSV.WriteCSV("学生信息.csv", result, false);
+        }
+        //读取CSV
+        private void ucBtnExt10_BtnClick(object sender, EventArgs e)
+        {
+            List<string[]> results = CSV.ReadCSV("学生信息.csv");
+            //遍历显示所有的内容
+            foreach (var item in results)
+            {
+                foreach (var va in item)
+                {
+                    Console.Write(va + " ");
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }
