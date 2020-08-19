@@ -79,6 +79,14 @@
             this.ucBtnExt14 = new HZH_Controls.Controls.UCBtnExt();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.ucBtnExt15 = new HZH_Controls.Controls.UCBtnExt();
+            this.hWindowControl1 = new HalconDotNet.HWindowControl();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.ucBtnExt16 = new HZH_Controls.Controls.UCBtnExt();
+            this.ucBtnExt17 = new HZH_Controls.Controls.UCBtnExt();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.ucBtnExt18 = new HZH_Controls.Controls.UCBtnExt();
+            this.ucBtnExt19 = new HZH_Controls.Controls.UCBtnExt();
             this.tabControlExt1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -87,8 +95,12 @@
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlExt1
@@ -901,6 +913,10 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.pictureBox1);
+            this.tabPage3.Controls.Add(this.groupBox6);
+            this.tabPage3.Controls.Add(this.groupBox5);
+            this.tabPage3.Controls.Add(this.hWindowControl1);
             this.tabPage3.Location = new System.Drawing.Point(4, 54);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(812, 430);
@@ -1082,11 +1098,161 @@
             this.ucBtnExt15.TipsText = "";
             this.ucBtnExt15.BtnClick += new System.EventHandler(this.ucBtnExt15_BtnClick);
             // 
+            // hWindowControl1
+            // 
+            this.hWindowControl1.BackColor = System.Drawing.Color.Black;
+            this.hWindowControl1.BorderColor = System.Drawing.Color.Black;
+            this.hWindowControl1.ImagePart = new System.Drawing.Rectangle(0, 0, 640, 480);
+            this.hWindowControl1.Location = new System.Drawing.Point(428, 3);
+            this.hWindowControl1.Name = "hWindowControl1";
+            this.hWindowControl1.Size = new System.Drawing.Size(378, 330);
+            this.hWindowControl1.TabIndex = 0;
+            this.hWindowControl1.WindowSize = new System.Drawing.Size(378, 330);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.ucBtnExt17);
+            this.groupBox5.Controls.Add(this.ucBtnExt16);
+            this.groupBox5.Location = new System.Drawing.Point(428, 339);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(378, 80);
+            this.groupBox5.TabIndex = 1;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Halcon 控件";
+            // 
+            // ucBtnExt16
+            // 
+            this.ucBtnExt16.BackColor = System.Drawing.Color.Transparent;
+            this.ucBtnExt16.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt16.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt16.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt16.BtnText = "绑 定 控 件";
+            this.ucBtnExt16.ConerRadius = 5;
+            this.ucBtnExt16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt16.EnabledMouseEffect = false;
+            this.ucBtnExt16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucBtnExt16.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt16.IsRadius = true;
+            this.ucBtnExt16.IsShowRect = true;
+            this.ucBtnExt16.IsShowTips = false;
+            this.ucBtnExt16.Location = new System.Drawing.Point(13, 23);
+            this.ucBtnExt16.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt16.Name = "ucBtnExt16";
+            this.ucBtnExt16.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.ucBtnExt16.RectWidth = 1;
+            this.ucBtnExt16.Size = new System.Drawing.Size(123, 48);
+            this.ucBtnExt16.TabIndex = 0;
+            this.ucBtnExt16.TabStop = false;
+            this.ucBtnExt16.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucBtnExt16.TipsText = "";
+            this.ucBtnExt16.BtnClick += new System.EventHandler(this.ucBtnExt16_BtnClick);
+            // 
+            // ucBtnExt17
+            // 
+            this.ucBtnExt17.BackColor = System.Drawing.Color.White;
+            this.ucBtnExt17.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt17.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt17.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt17.BtnText = "读 取 图 片";
+            this.ucBtnExt17.ConerRadius = 5;
+            this.ucBtnExt17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt17.EnabledMouseEffect = false;
+            this.ucBtnExt17.FillColor = System.Drawing.Color.LawnGreen;
+            this.ucBtnExt17.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt17.IsRadius = true;
+            this.ucBtnExt17.IsShowRect = true;
+            this.ucBtnExt17.IsShowTips = false;
+            this.ucBtnExt17.Location = new System.Drawing.Point(241, 23);
+            this.ucBtnExt17.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt17.Name = "ucBtnExt17";
+            this.ucBtnExt17.RectColor = System.Drawing.Color.LawnGreen;
+            this.ucBtnExt17.RectWidth = 1;
+            this.ucBtnExt17.Size = new System.Drawing.Size(123, 48);
+            this.ucBtnExt17.TabIndex = 0;
+            this.ucBtnExt17.TabStop = false;
+            this.ucBtnExt17.TipsColor = System.Drawing.Color.LawnGreen;
+            this.ucBtnExt17.TipsText = "";
+            this.ucBtnExt17.BtnClick += new System.EventHandler(this.ucBtnExt17_BtnClick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Gray;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(378, 330);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.ucBtnExt18);
+            this.groupBox6.Controls.Add(this.ucBtnExt19);
+            this.groupBox6.Location = new System.Drawing.Point(3, 339);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(390, 80);
+            this.groupBox6.TabIndex = 1;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "PictureBox 控件";
+            // 
+            // ucBtnExt18
+            // 
+            this.ucBtnExt18.BackColor = System.Drawing.Color.White;
+            this.ucBtnExt18.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt18.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt18.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt18.BtnText = "读 取 图 片";
+            this.ucBtnExt18.ConerRadius = 5;
+            this.ucBtnExt18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt18.EnabledMouseEffect = false;
+            this.ucBtnExt18.FillColor = System.Drawing.Color.LawnGreen;
+            this.ucBtnExt18.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt18.IsRadius = true;
+            this.ucBtnExt18.IsShowRect = true;
+            this.ucBtnExt18.IsShowTips = false;
+            this.ucBtnExt18.Location = new System.Drawing.Point(241, 23);
+            this.ucBtnExt18.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt18.Name = "ucBtnExt18";
+            this.ucBtnExt18.RectColor = System.Drawing.Color.LawnGreen;
+            this.ucBtnExt18.RectWidth = 1;
+            this.ucBtnExt18.Size = new System.Drawing.Size(123, 48);
+            this.ucBtnExt18.TabIndex = 0;
+            this.ucBtnExt18.TabStop = false;
+            this.ucBtnExt18.TipsColor = System.Drawing.Color.LawnGreen;
+            this.ucBtnExt18.TipsText = "";
+            this.ucBtnExt18.BtnClick += new System.EventHandler(this.ucBtnExt18_BtnClick);
+            // 
+            // ucBtnExt19
+            // 
+            this.ucBtnExt19.BackColor = System.Drawing.Color.White;
+            this.ucBtnExt19.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt19.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt19.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt19.BtnText = "绑 定 控 件";
+            this.ucBtnExt19.ConerRadius = 5;
+            this.ucBtnExt19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt19.EnabledMouseEffect = false;
+            this.ucBtnExt19.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucBtnExt19.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt19.IsRadius = true;
+            this.ucBtnExt19.IsShowRect = true;
+            this.ucBtnExt19.IsShowTips = false;
+            this.ucBtnExt19.Location = new System.Drawing.Point(13, 23);
+            this.ucBtnExt19.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt19.Name = "ucBtnExt19";
+            this.ucBtnExt19.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.ucBtnExt19.RectWidth = 1;
+            this.ucBtnExt19.Size = new System.Drawing.Size(123, 48);
+            this.ucBtnExt19.TabIndex = 0;
+            this.ucBtnExt19.TabStop = false;
+            this.ucBtnExt19.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucBtnExt19.TipsText = "";
+            this.ucBtnExt19.BtnClick += new System.EventHandler(this.ucBtnExt19_BtnClick);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(827, 503);
+            this.ClientSize = new System.Drawing.Size(827, 506);
             this.Controls.Add(this.tabControlExt1);
             this.Name = "Form2";
             this.Text = "Form2";
@@ -1102,8 +1268,12 @@
             this.groupBox1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1161,5 +1331,13 @@
         private HZH_Controls.Controls.UCBtnExt ucBtnExt11;
         private System.Windows.Forms.DataGridView dataGridView2;
         private HZH_Controls.Controls.UCBtnExt ucBtnExt15;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private HalconDotNet.HWindowControl hWindowControl1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private HZH_Controls.Controls.UCBtnExt ucBtnExt18;
+        private HZH_Controls.Controls.UCBtnExt ucBtnExt19;
+        private HZH_Controls.Controls.UCBtnExt ucBtnExt17;
+        private HZH_Controls.Controls.UCBtnExt ucBtnExt16;
     }
 }

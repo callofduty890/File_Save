@@ -11,6 +11,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using ClassLibrary;//引用自定义的函数-动态链接库
+using HalconDotNet;//引用halcon的动态链接库
 
 namespace 文件操作与日志记录
 {
@@ -18,6 +19,11 @@ namespace 文件操作与日志记录
     {
         //全局变量，提供给dataGridView2 使用 .将其与datetable绑定
         DataTable dt = new DataTable();
+
+        //Halcon类型的变量与对象-全局 变量与对象
+        HObject ho_Image;
+        HTuple hv_Width = new HTuple(), hv_Height = new HTuple();
+        HTuple hv_WindowHandle = new HTuple();
 
 
         public Form2()
@@ -258,5 +264,272 @@ namespace 文件操作与日志记录
             //将活动单元格删除
             dt.Rows.Remove(dt.Rows[index]);
         }
+
+        private void ucBtnExt18_BtnClick(object sender, EventArgs e)
+        {
+            //显示图像
+            HOperatorSet.DispObj(ho_Image, hv_WindowHandle);
+            //显示提示信息
+            disp_message(hv_WindowHandle, "读取图片成功", "window", 12, 12, "black", "true");
+        }
+
+        private void ucBtnExt19_BtnClick(object sender, EventArgs e)
+        {
+            //读取图片
+            HOperatorSet.ReadImage(out ho_Image, "./street_01.jpg");
+            //获取图片宽高
+            HOperatorSet.GetImageSize(ho_Image, out hv_Width, out hv_Height);
+            //打开新窗口
+            HOperatorSet.OpenWindow(0, 0, this.pictureBox1.Width, this.pictureBox1.Height, this.pictureBox1.Handle, "visible", "", out hv_WindowHandle);
+            //设置显示的宽高
+            HOperatorSet.SetPart(hv_WindowHandle, 0, 0, hv_Height, hv_Width);
+            //推送->设置活跃窗口
+            HDevWindowStack.Push(hv_WindowHandle);
+        }
+
+        private void ucBtnExt16_BtnClick(object sender, EventArgs e)
+        {
+            //读取图片
+            HOperatorSet.ReadImage(out ho_Image, "./street_01.jpg");
+            //获取图片宽高
+            HOperatorSet.GetImageSize(ho_Image, out hv_Width, out hv_Height);
+            //获取窗口句柄
+            hv_WindowHandle = this.hWindowControl1.HalconWindow;
+            //设置显示的宽高
+            HOperatorSet.SetPart(hv_WindowHandle, 0, 0, hv_Height, hv_Width);
+        }
+
+        private void ucBtnExt17_BtnClick(object sender, EventArgs e)
+        {
+            //显示图像
+            HOperatorSet.DispObj(ho_Image, hv_WindowHandle);
+            //显示提示信息
+            disp_message(hv_WindowHandle, "读取图片成功", "window", 12, 12, "black", "true");
+        }
+
+        //Halcon显示消息功能函数-直接复制粘贴
+        public void disp_message(HTuple hv_WindowHandle, HTuple hv_String, HTuple hv_CoordSystem,
+        HTuple hv_Row, HTuple hv_Column, HTuple hv_Color, HTuple hv_Box)
+        {
+
+
+
+            // Local iconic variables 
+
+            // Local control variables 
+
+            HTuple hv_GenParamName = new HTuple(), hv_GenParamValue = new HTuple();
+            HTuple hv_Color_COPY_INP_TMP = new HTuple(hv_Color);
+            HTuple hv_Column_COPY_INP_TMP = new HTuple(hv_Column);
+            HTuple hv_CoordSystem_COPY_INP_TMP = new HTuple(hv_CoordSystem);
+            HTuple hv_Row_COPY_INP_TMP = new HTuple(hv_Row);
+
+            // Initialize local and output iconic variables 
+            //This procedure displays text in a graphics window.
+            //
+            //Input parameters:
+            //WindowHandle: The WindowHandle of the graphics window, where
+            //   the message should be displayed
+            //String: A tuple of strings containing the text message to be displayed
+            //CoordSystem: If set to 'window', the text position is given
+            //   with respect to the window coordinate system.
+            //   If set to 'image', image coordinates are used.
+            //   (This may be useful in zoomed images.)
+            //Row: The row coordinate of the desired text position
+            //   A tuple of values is allowed to display text at different
+            //   positions.
+            //Column: The column coordinate of the desired text position
+            //   A tuple of values is allowed to display text at different
+            //   positions.
+            //Color: defines the color of the text as string.
+            //   If set to [], '' or 'auto' the currently set color is used.
+            //   If a tuple of strings is passed, the colors are used cyclically...
+            //   - if |Row| == |Column| == 1: for each new textline
+            //   = else for each text position.
+            //Box: If Box[0] is set to 'true', the text is written within an orange box.
+            //     If set to' false', no box is displayed.
+            //     If set to a color string (e.g. 'white', '#FF00CC', etc.),
+            //       the text is written in a box of that color.
+            //     An optional second value for Box (Box[1]) controls if a shadow is displayed:
+            //       'true' -> display a shadow in a default color
+            //       'false' -> display no shadow
+            //       otherwise -> use given string as color string for the shadow color
+            //
+            //It is possible to display multiple text strings in a single call.
+            //In this case, some restrictions apply:
+            //- Multiple text positions can be defined by specifying a tuple
+            //  with multiple Row and/or Column coordinates, i.e.:
+            //  - |Row| == n, |Column| == n
+            //  - |Row| == n, |Column| == 1
+            //  - |Row| == 1, |Column| == n
+            //- If |Row| == |Column| == 1,
+            //  each element of String is display in a new textline.
+            //- If multiple positions or specified, the number of Strings
+            //  must match the number of positions, i.e.:
+            //  - Either |String| == n (each string is displayed at the
+            //                          corresponding position),
+            //  - or     |String| == 1 (The string is displayed n times).
+            //
+            //
+            //Convert the parameters for disp_text.
+            if ((int)((new HTuple(hv_Row_COPY_INP_TMP.TupleEqual(new HTuple()))).TupleOr(
+                new HTuple(hv_Column_COPY_INP_TMP.TupleEqual(new HTuple())))) != 0)
+            {
+
+                hv_Color_COPY_INP_TMP.Dispose();
+                hv_Column_COPY_INP_TMP.Dispose();
+                hv_CoordSystem_COPY_INP_TMP.Dispose();
+                hv_Row_COPY_INP_TMP.Dispose();
+                hv_GenParamName.Dispose();
+                hv_GenParamValue.Dispose();
+
+                return;
+            }
+            if ((int)(new HTuple(hv_Row_COPY_INP_TMP.TupleEqual(-1))) != 0)
+            {
+                hv_Row_COPY_INP_TMP.Dispose();
+                hv_Row_COPY_INP_TMP = 12;
+            }
+            if ((int)(new HTuple(hv_Column_COPY_INP_TMP.TupleEqual(-1))) != 0)
+            {
+                hv_Column_COPY_INP_TMP.Dispose();
+                hv_Column_COPY_INP_TMP = 12;
+            }
+            //
+            //Convert the parameter Box to generic parameters.
+            hv_GenParamName.Dispose();
+            hv_GenParamName = new HTuple();
+            hv_GenParamValue.Dispose();
+            hv_GenParamValue = new HTuple();
+            if ((int)(new HTuple((new HTuple(hv_Box.TupleLength())).TupleGreater(0))) != 0)
+            {
+                if ((int)(new HTuple(((hv_Box.TupleSelect(0))).TupleEqual("false"))) != 0)
+                {
+                    //Display no box
+                    using (HDevDisposeHelper dh = new HDevDisposeHelper())
+                    {
+                        {
+                            HTuple
+                              ExpTmpLocalVar_GenParamName = hv_GenParamName.TupleConcat(
+                                "box");
+                            hv_GenParamName.Dispose();
+                            hv_GenParamName = ExpTmpLocalVar_GenParamName;
+                        }
+                    }
+                    using (HDevDisposeHelper dh = new HDevDisposeHelper())
+                    {
+                        {
+                            HTuple
+                              ExpTmpLocalVar_GenParamValue = hv_GenParamValue.TupleConcat(
+                                "false");
+                            hv_GenParamValue.Dispose();
+                            hv_GenParamValue = ExpTmpLocalVar_GenParamValue;
+                        }
+                    }
+                }
+                else if ((int)(new HTuple(((hv_Box.TupleSelect(0))).TupleNotEqual("true"))) != 0)
+                {
+                    //Set a color other than the default.
+                    using (HDevDisposeHelper dh = new HDevDisposeHelper())
+                    {
+                        {
+                            HTuple
+                              ExpTmpLocalVar_GenParamName = hv_GenParamName.TupleConcat(
+                                "box_color");
+                            hv_GenParamName.Dispose();
+                            hv_GenParamName = ExpTmpLocalVar_GenParamName;
+                        }
+                    }
+                    using (HDevDisposeHelper dh = new HDevDisposeHelper())
+                    {
+                        {
+                            HTuple
+                              ExpTmpLocalVar_GenParamValue = hv_GenParamValue.TupleConcat(
+                                hv_Box.TupleSelect(0));
+                            hv_GenParamValue.Dispose();
+                            hv_GenParamValue = ExpTmpLocalVar_GenParamValue;
+                        }
+                    }
+                }
+            }
+            if ((int)(new HTuple((new HTuple(hv_Box.TupleLength())).TupleGreater(1))) != 0)
+            {
+                if ((int)(new HTuple(((hv_Box.TupleSelect(1))).TupleEqual("false"))) != 0)
+                {
+                    //Display no shadow.
+                    using (HDevDisposeHelper dh = new HDevDisposeHelper())
+                    {
+                        {
+                            HTuple
+                              ExpTmpLocalVar_GenParamName = hv_GenParamName.TupleConcat(
+                                "shadow");
+                            hv_GenParamName.Dispose();
+                            hv_GenParamName = ExpTmpLocalVar_GenParamName;
+                        }
+                    }
+                    using (HDevDisposeHelper dh = new HDevDisposeHelper())
+                    {
+                        {
+                            HTuple
+                              ExpTmpLocalVar_GenParamValue = hv_GenParamValue.TupleConcat(
+                                "false");
+                            hv_GenParamValue.Dispose();
+                            hv_GenParamValue = ExpTmpLocalVar_GenParamValue;
+                        }
+                    }
+                }
+                else if ((int)(new HTuple(((hv_Box.TupleSelect(1))).TupleNotEqual("true"))) != 0)
+                {
+                    //Set a shadow color other than the default.
+                    using (HDevDisposeHelper dh = new HDevDisposeHelper())
+                    {
+                        {
+                            HTuple
+                              ExpTmpLocalVar_GenParamName = hv_GenParamName.TupleConcat(
+                                "shadow_color");
+                            hv_GenParamName.Dispose();
+                            hv_GenParamName = ExpTmpLocalVar_GenParamName;
+                        }
+                    }
+                    using (HDevDisposeHelper dh = new HDevDisposeHelper())
+                    {
+                        {
+                            HTuple
+                              ExpTmpLocalVar_GenParamValue = hv_GenParamValue.TupleConcat(
+                                hv_Box.TupleSelect(1));
+                            hv_GenParamValue.Dispose();
+                            hv_GenParamValue = ExpTmpLocalVar_GenParamValue;
+                        }
+                    }
+                }
+            }
+            //Restore default CoordSystem behavior.
+            if ((int)(new HTuple(hv_CoordSystem_COPY_INP_TMP.TupleNotEqual("window"))) != 0)
+            {
+                hv_CoordSystem_COPY_INP_TMP.Dispose();
+                hv_CoordSystem_COPY_INP_TMP = "image";
+            }
+            //
+            if ((int)(new HTuple(hv_Color_COPY_INP_TMP.TupleEqual(""))) != 0)
+            {
+                //disp_text does not accept an empty string for Color.
+                hv_Color_COPY_INP_TMP.Dispose();
+                hv_Color_COPY_INP_TMP = new HTuple();
+            }
+            //
+            HOperatorSet.DispText(hv_WindowHandle, hv_String, hv_CoordSystem_COPY_INP_TMP,
+                hv_Row_COPY_INP_TMP, hv_Column_COPY_INP_TMP, hv_Color_COPY_INP_TMP, hv_GenParamName,
+                hv_GenParamValue);
+
+            hv_Color_COPY_INP_TMP.Dispose();
+            hv_Column_COPY_INP_TMP.Dispose();
+            hv_CoordSystem_COPY_INP_TMP.Dispose();
+            hv_Row_COPY_INP_TMP.Dispose();
+            hv_GenParamName.Dispose();
+            hv_GenParamValue.Dispose();
+
+            return;
+        }
+
     }
 }
