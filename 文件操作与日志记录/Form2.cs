@@ -16,6 +16,10 @@ namespace 文件操作与日志记录
 {
     public partial class Form2 : Form
     {
+        //全局变量，提供给dataGridView2 使用 .将其与datetable绑定
+        DataTable dt = new DataTable();
+
+
         public Form2()
         {
             InitializeComponent();
@@ -78,6 +82,9 @@ namespace 文件操作与日志记录
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            //DataTable与控件dataGridView绑定
+            this.dataGridView2.DataSource = dt;
+
             //读取路径
             string Save_File_Path = System.AppDomain.CurrentDomain.BaseDirectory + "Save_File.ini";
             //读取赋值
@@ -86,7 +93,10 @@ namespace 文件操作与日志记录
             this.textBoxEx2.Text = INI.ContentValue("information", "减速度", Save_File_Path);
             this.textBoxEx4.Text = INI.ContentValue("information", "最大速度", Save_File_Path);
 
+
+
         }
+       
         [Serializable]
         class information
         {
@@ -188,6 +198,65 @@ namespace 文件操作与日志记录
                 }
                 Console.WriteLine();
             }
+        }
+
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+
+        }
+        //创建表头
+        private void ucBtnExt11_BtnClick(object sender, EventArgs e)
+        {
+            dt.Columns.Add("学号", typeof(int));
+            dt.Columns.Add("姓名", typeof(string));
+            dt.Columns.Add("班级", typeof(string));
+            dt.Columns.Add("电话号码", typeof(string));
+        }
+
+        private void ucBtnExt12_BtnClick(object sender, EventArgs e)
+        {
+            dt.Rows.Add(1, "助教A", "语言班", "123-456");
+            dt.Rows.Add(2, "助教B", "语言班", "123-456");
+        }
+
+        private void ucBtnExt13_BtnClick(object sender, EventArgs e)
+        {
+            //拿到索引  获取最后一行
+            int index = dt.Rows.Count - 1;
+            if (index>-1)
+            {
+                //删除最后一行
+                dt.Rows.Remove(dt.Rows[index]);
+            }
+            else
+            {
+                MessageBox.Show("全部删除");
+            }
+
+        }
+        //修改一行
+        private void ucBtnExt14_BtnClick(object sender, EventArgs e)
+        {
+            //获取最后一行：修改
+            int index = dt.Rows.Count - 1;
+            //修改
+            dt.Rows[index][1] = "嘉嘉";
+            dt.Rows[index][2] = "三年二班";
+            dt.Rows[index][3] = "089-123";
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        //删除
+        private void ucBtnExt15_BtnClick(object sender, EventArgs e)
+        {
+            //获取当前活跃状态的单元格索引
+            int index = this.dataGridView2.CurrentCell.RowIndex;
+            //将活动单元格删除
+            dt.Rows.Remove(dt.Rows[index]);
         }
     }
 }

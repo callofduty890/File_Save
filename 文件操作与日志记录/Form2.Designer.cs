@@ -67,12 +67,18 @@
             this.ucBtnExt2 = new HZH_Controls.Controls.UCBtnExt();
             this.ucBtnExt1 = new HZH_Controls.Controls.UCBtnExt();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ucBtnExt10 = new HZH_Controls.Controls.UCBtnExt();
+            this.ucBtnExt9 = new HZH_Controls.Controls.UCBtnExt();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.ucBtnExt9 = new HZH_Controls.Controls.UCBtnExt();
-            this.ucBtnExt10 = new HZH_Controls.Controls.UCBtnExt();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ucBtnExt11 = new HZH_Controls.Controls.UCBtnExt();
+            this.ucBtnExt12 = new HZH_Controls.Controls.UCBtnExt();
+            this.ucBtnExt13 = new HZH_Controls.Controls.UCBtnExt();
+            this.ucBtnExt14 = new HZH_Controls.Controls.UCBtnExt();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.ucBtnExt15 = new HZH_Controls.Controls.UCBtnExt();
             this.tabControlExt1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -81,6 +87,8 @@
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlExt1
@@ -94,11 +102,10 @@
             this.tabControlExt1.Font = new System.Drawing.Font("宋体", 14F);
             this.tabControlExt1.IsShowCloseBtn = false;
             this.tabControlExt1.ItemSize = new System.Drawing.Size(0, 50);
-            this.tabControlExt1.Location = new System.Drawing.Point(7, 15);
-            this.tabControlExt1.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControlExt1.Location = new System.Drawing.Point(5, 12);
             this.tabControlExt1.Name = "tabControlExt1";
             this.tabControlExt1.SelectedIndex = 0;
-            this.tabControlExt1.Size = new System.Drawing.Size(1094, 610);
+            this.tabControlExt1.Size = new System.Drawing.Size(820, 488);
             this.tabControlExt1.TabIndex = 0;
             this.tabControlExt1.UncloseTabIndexs = null;
             // 
@@ -109,10 +116,9 @@
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 54);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1086, 552);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Size = new System.Drawing.Size(812, 430);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "INI/XML/序列化与/反序列化";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -129,11 +135,9 @@
             this.groupBox4.Controls.Add(this.textBoxEx10);
             this.groupBox4.Controls.Add(this.textBoxEx11);
             this.groupBox4.Controls.Add(this.textBoxEx12);
-            this.groupBox4.Location = new System.Drawing.Point(717, 160);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Location = new System.Drawing.Point(538, 128);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(344, 371);
+            this.groupBox4.Size = new System.Drawing.Size(258, 297);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "XML - 封装";
@@ -153,12 +157,12 @@
             this.ucBtnExt7.IsRadius = true;
             this.ucBtnExt7.IsShowRect = true;
             this.ucBtnExt7.IsShowTips = false;
-            this.ucBtnExt7.Location = new System.Drawing.Point(189, 296);
+            this.ucBtnExt7.Location = new System.Drawing.Point(142, 237);
             this.ucBtnExt7.Margin = new System.Windows.Forms.Padding(0);
             this.ucBtnExt7.Name = "ucBtnExt7";
             this.ucBtnExt7.RectColor = System.Drawing.Color.Gold;
             this.ucBtnExt7.RectWidth = 1;
-            this.ucBtnExt7.Size = new System.Drawing.Size(137, 59);
+            this.ucBtnExt7.Size = new System.Drawing.Size(103, 47);
             this.ucBtnExt7.TabIndex = 3;
             this.ucBtnExt7.TabStop = false;
             this.ucBtnExt7.TipsColor = System.Drawing.Color.Gold;
@@ -180,12 +184,12 @@
             this.ucBtnExt8.IsRadius = true;
             this.ucBtnExt8.IsShowRect = true;
             this.ucBtnExt8.IsShowTips = false;
-            this.ucBtnExt8.Location = new System.Drawing.Point(13, 296);
+            this.ucBtnExt8.Location = new System.Drawing.Point(10, 237);
             this.ucBtnExt8.Margin = new System.Windows.Forms.Padding(0);
             this.ucBtnExt8.Name = "ucBtnExt8";
             this.ucBtnExt8.RectColor = System.Drawing.Color.LawnGreen;
             this.ucBtnExt8.RectWidth = 1;
-            this.ucBtnExt8.Size = new System.Drawing.Size(137, 59);
+            this.ucBtnExt8.Size = new System.Drawing.Size(103, 47);
             this.ucBtnExt8.TabIndex = 2;
             this.ucBtnExt8.TabStop = false;
             this.ucBtnExt8.TipsColor = System.Drawing.Color.LawnGreen;
@@ -195,10 +199,9 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(8, 248);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(6, 198);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(118, 24);
+            this.label9.Size = new System.Drawing.Size(95, 19);
             this.label9.TabIndex = 1;
             this.label9.Text = "最大速度:";
             this.label9.Click += new System.EventHandler(this.label2_Click);
@@ -206,10 +209,9 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(29, 189);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(22, 151);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(94, 24);
+            this.label10.Size = new System.Drawing.Size(76, 19);
             this.label10.TabIndex = 1;
             this.label10.Text = "减速度:";
             this.label10.Click += new System.EventHandler(this.label2_Click);
@@ -217,20 +219,18 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(8, 56);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(6, 45);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 24);
+            this.label11.Size = new System.Drawing.Size(95, 19);
             this.label11.TabIndex = 1;
             this.label11.Text = "初始速度:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(29, 124);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(22, 99);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(94, 24);
+            this.label12.Size = new System.Drawing.Size(76, 19);
             this.label12.TabIndex = 1;
             this.label12.Text = "加速度:";
             // 
@@ -238,8 +238,7 @@
             // 
             this.textBoxEx9.DecLength = 2;
             this.textBoxEx9.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx9.Location = new System.Drawing.Point(139, 244);
-            this.textBoxEx9.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEx9.Location = new System.Drawing.Point(104, 195);
             this.textBoxEx9.MaxValue = new decimal(new int[] {
             1000000,
             0,
@@ -257,15 +256,14 @@
             this.textBoxEx9.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.textBoxEx9.PromptText = "";
             this.textBoxEx9.RegexPattern = "";
-            this.textBoxEx9.Size = new System.Drawing.Size(187, 34);
+            this.textBoxEx9.Size = new System.Drawing.Size(141, 29);
             this.textBoxEx9.TabIndex = 0;
             // 
             // textBoxEx10
             // 
             this.textBoxEx10.DecLength = 2;
             this.textBoxEx10.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx10.Location = new System.Drawing.Point(139, 185);
-            this.textBoxEx10.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEx10.Location = new System.Drawing.Point(104, 148);
             this.textBoxEx10.MaxValue = new decimal(new int[] {
             1000000,
             0,
@@ -283,15 +281,14 @@
             this.textBoxEx10.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.textBoxEx10.PromptText = "";
             this.textBoxEx10.RegexPattern = "";
-            this.textBoxEx10.Size = new System.Drawing.Size(187, 34);
+            this.textBoxEx10.Size = new System.Drawing.Size(141, 29);
             this.textBoxEx10.TabIndex = 0;
             // 
             // textBoxEx11
             // 
             this.textBoxEx11.DecLength = 2;
             this.textBoxEx11.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx11.Location = new System.Drawing.Point(139, 56);
-            this.textBoxEx11.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEx11.Location = new System.Drawing.Point(104, 45);
             this.textBoxEx11.MaxValue = new decimal(new int[] {
             1000000,
             0,
@@ -309,15 +306,14 @@
             this.textBoxEx11.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.textBoxEx11.PromptText = "";
             this.textBoxEx11.RegexPattern = "";
-            this.textBoxEx11.Size = new System.Drawing.Size(187, 34);
+            this.textBoxEx11.Size = new System.Drawing.Size(141, 29);
             this.textBoxEx11.TabIndex = 0;
             // 
             // textBoxEx12
             // 
             this.textBoxEx12.DecLength = 2;
             this.textBoxEx12.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx12.Location = new System.Drawing.Point(139, 120);
-            this.textBoxEx12.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEx12.Location = new System.Drawing.Point(104, 96);
             this.textBoxEx12.MaxValue = new decimal(new int[] {
             1000000,
             0,
@@ -335,7 +331,7 @@
             this.textBoxEx12.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.textBoxEx12.PromptText = "";
             this.textBoxEx12.RegexPattern = "";
-            this.textBoxEx12.Size = new System.Drawing.Size(187, 34);
+            this.textBoxEx12.Size = new System.Drawing.Size(141, 29);
             this.textBoxEx12.TabIndex = 0;
             // 
             // groupBox3
@@ -350,11 +346,9 @@
             this.groupBox3.Controls.Add(this.textBoxEx6);
             this.groupBox3.Controls.Add(this.textBoxEx7);
             this.groupBox3.Controls.Add(this.textBoxEx8);
-            this.groupBox3.Location = new System.Drawing.Point(360, 160);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Location = new System.Drawing.Point(270, 128);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(344, 371);
+            this.groupBox3.Size = new System.Drawing.Size(258, 297);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "序列化与反序列化 - 封装";
@@ -374,12 +368,12 @@
             this.ucBtnExt5.IsRadius = true;
             this.ucBtnExt5.IsShowRect = true;
             this.ucBtnExt5.IsShowTips = false;
-            this.ucBtnExt5.Location = new System.Drawing.Point(189, 296);
+            this.ucBtnExt5.Location = new System.Drawing.Point(142, 237);
             this.ucBtnExt5.Margin = new System.Windows.Forms.Padding(0);
             this.ucBtnExt5.Name = "ucBtnExt5";
             this.ucBtnExt5.RectColor = System.Drawing.Color.Gold;
             this.ucBtnExt5.RectWidth = 1;
-            this.ucBtnExt5.Size = new System.Drawing.Size(137, 59);
+            this.ucBtnExt5.Size = new System.Drawing.Size(103, 47);
             this.ucBtnExt5.TabIndex = 3;
             this.ucBtnExt5.TabStop = false;
             this.ucBtnExt5.TipsColor = System.Drawing.Color.Gold;
@@ -401,12 +395,12 @@
             this.ucBtnExt6.IsRadius = true;
             this.ucBtnExt6.IsShowRect = true;
             this.ucBtnExt6.IsShowTips = false;
-            this.ucBtnExt6.Location = new System.Drawing.Point(13, 296);
+            this.ucBtnExt6.Location = new System.Drawing.Point(10, 237);
             this.ucBtnExt6.Margin = new System.Windows.Forms.Padding(0);
             this.ucBtnExt6.Name = "ucBtnExt6";
             this.ucBtnExt6.RectColor = System.Drawing.Color.LawnGreen;
             this.ucBtnExt6.RectWidth = 1;
-            this.ucBtnExt6.Size = new System.Drawing.Size(137, 59);
+            this.ucBtnExt6.Size = new System.Drawing.Size(103, 47);
             this.ucBtnExt6.TabIndex = 2;
             this.ucBtnExt6.TabStop = false;
             this.ucBtnExt6.TipsColor = System.Drawing.Color.LawnGreen;
@@ -416,10 +410,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 248);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(6, 198);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 24);
+            this.label5.Size = new System.Drawing.Size(95, 19);
             this.label5.TabIndex = 1;
             this.label5.Text = "最大速度:";
             this.label5.Click += new System.EventHandler(this.label2_Click);
@@ -427,10 +420,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(29, 189);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(22, 151);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 24);
+            this.label6.Size = new System.Drawing.Size(76, 19);
             this.label6.TabIndex = 1;
             this.label6.Text = "减速度:";
             this.label6.Click += new System.EventHandler(this.label2_Click);
@@ -438,20 +430,18 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 56);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(6, 45);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 24);
+            this.label7.Size = new System.Drawing.Size(95, 19);
             this.label7.TabIndex = 1;
             this.label7.Text = "初始速度:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(29, 124);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(22, 99);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 24);
+            this.label8.Size = new System.Drawing.Size(76, 19);
             this.label8.TabIndex = 1;
             this.label8.Text = "加速度:";
             // 
@@ -459,8 +449,7 @@
             // 
             this.textBoxEx5.DecLength = 2;
             this.textBoxEx5.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx5.Location = new System.Drawing.Point(139, 244);
-            this.textBoxEx5.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEx5.Location = new System.Drawing.Point(104, 195);
             this.textBoxEx5.MaxValue = new decimal(new int[] {
             1000000,
             0,
@@ -478,15 +467,14 @@
             this.textBoxEx5.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.textBoxEx5.PromptText = "";
             this.textBoxEx5.RegexPattern = "";
-            this.textBoxEx5.Size = new System.Drawing.Size(187, 34);
+            this.textBoxEx5.Size = new System.Drawing.Size(141, 29);
             this.textBoxEx5.TabIndex = 0;
             // 
             // textBoxEx6
             // 
             this.textBoxEx6.DecLength = 2;
             this.textBoxEx6.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx6.Location = new System.Drawing.Point(139, 185);
-            this.textBoxEx6.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEx6.Location = new System.Drawing.Point(104, 148);
             this.textBoxEx6.MaxValue = new decimal(new int[] {
             1000000,
             0,
@@ -504,15 +492,14 @@
             this.textBoxEx6.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.textBoxEx6.PromptText = "";
             this.textBoxEx6.RegexPattern = "";
-            this.textBoxEx6.Size = new System.Drawing.Size(187, 34);
+            this.textBoxEx6.Size = new System.Drawing.Size(141, 29);
             this.textBoxEx6.TabIndex = 0;
             // 
             // textBoxEx7
             // 
             this.textBoxEx7.DecLength = 2;
             this.textBoxEx7.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx7.Location = new System.Drawing.Point(139, 56);
-            this.textBoxEx7.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEx7.Location = new System.Drawing.Point(104, 45);
             this.textBoxEx7.MaxValue = new decimal(new int[] {
             1000000,
             0,
@@ -530,15 +517,14 @@
             this.textBoxEx7.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.textBoxEx7.PromptText = "";
             this.textBoxEx7.RegexPattern = "";
-            this.textBoxEx7.Size = new System.Drawing.Size(187, 34);
+            this.textBoxEx7.Size = new System.Drawing.Size(141, 29);
             this.textBoxEx7.TabIndex = 0;
             // 
             // textBoxEx8
             // 
             this.textBoxEx8.DecLength = 2;
             this.textBoxEx8.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx8.Location = new System.Drawing.Point(139, 120);
-            this.textBoxEx8.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEx8.Location = new System.Drawing.Point(104, 96);
             this.textBoxEx8.MaxValue = new decimal(new int[] {
             1000000,
             0,
@@ -556,7 +542,7 @@
             this.textBoxEx8.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.textBoxEx8.PromptText = "";
             this.textBoxEx8.RegexPattern = "";
-            this.textBoxEx8.Size = new System.Drawing.Size(187, 34);
+            this.textBoxEx8.Size = new System.Drawing.Size(141, 29);
             this.textBoxEx8.TabIndex = 0;
             // 
             // groupBox2
@@ -571,11 +557,9 @@
             this.groupBox2.Controls.Add(this.textBoxEx2);
             this.groupBox2.Controls.Add(this.textBoxEx3);
             this.groupBox2.Controls.Add(this.textBoxEx1);
-            this.groupBox2.Location = new System.Drawing.Point(8, 159);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Location = new System.Drawing.Point(6, 127);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(344, 371);
+            this.groupBox2.Size = new System.Drawing.Size(258, 297);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "INI - 封装";
@@ -595,12 +579,12 @@
             this.ucBtnExt4.IsRadius = true;
             this.ucBtnExt4.IsShowRect = true;
             this.ucBtnExt4.IsShowTips = false;
-            this.ucBtnExt4.Location = new System.Drawing.Point(189, 296);
+            this.ucBtnExt4.Location = new System.Drawing.Point(142, 237);
             this.ucBtnExt4.Margin = new System.Windows.Forms.Padding(0);
             this.ucBtnExt4.Name = "ucBtnExt4";
             this.ucBtnExt4.RectColor = System.Drawing.Color.Gold;
             this.ucBtnExt4.RectWidth = 1;
-            this.ucBtnExt4.Size = new System.Drawing.Size(137, 59);
+            this.ucBtnExt4.Size = new System.Drawing.Size(103, 47);
             this.ucBtnExt4.TabIndex = 3;
             this.ucBtnExt4.TabStop = false;
             this.ucBtnExt4.TipsColor = System.Drawing.Color.Gold;
@@ -622,12 +606,12 @@
             this.ucBtnExt3.IsRadius = true;
             this.ucBtnExt3.IsShowRect = true;
             this.ucBtnExt3.IsShowTips = false;
-            this.ucBtnExt3.Location = new System.Drawing.Point(13, 296);
+            this.ucBtnExt3.Location = new System.Drawing.Point(10, 237);
             this.ucBtnExt3.Margin = new System.Windows.Forms.Padding(0);
             this.ucBtnExt3.Name = "ucBtnExt3";
             this.ucBtnExt3.RectColor = System.Drawing.Color.LawnGreen;
             this.ucBtnExt3.RectWidth = 1;
-            this.ucBtnExt3.Size = new System.Drawing.Size(137, 59);
+            this.ucBtnExt3.Size = new System.Drawing.Size(103, 47);
             this.ucBtnExt3.TabIndex = 2;
             this.ucBtnExt3.TabStop = false;
             this.ucBtnExt3.TipsColor = System.Drawing.Color.LawnGreen;
@@ -637,10 +621,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 248);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(6, 198);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 24);
+            this.label4.Size = new System.Drawing.Size(95, 19);
             this.label4.TabIndex = 1;
             this.label4.Text = "最大速度:";
             this.label4.Click += new System.EventHandler(this.label2_Click);
@@ -648,10 +631,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 189);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(22, 151);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 24);
+            this.label2.Size = new System.Drawing.Size(76, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "减速度:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -659,20 +641,18 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 56);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(6, 45);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 24);
+            this.label3.Size = new System.Drawing.Size(95, 19);
             this.label3.TabIndex = 1;
             this.label3.Text = "初始速度:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 124);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(22, 99);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 24);
+            this.label1.Size = new System.Drawing.Size(76, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "加速度:";
             // 
@@ -680,8 +660,7 @@
             // 
             this.textBoxEx4.DecLength = 2;
             this.textBoxEx4.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx4.Location = new System.Drawing.Point(139, 244);
-            this.textBoxEx4.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEx4.Location = new System.Drawing.Point(104, 195);
             this.textBoxEx4.MaxValue = new decimal(new int[] {
             1000000,
             0,
@@ -699,15 +678,14 @@
             this.textBoxEx4.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.textBoxEx4.PromptText = "";
             this.textBoxEx4.RegexPattern = "";
-            this.textBoxEx4.Size = new System.Drawing.Size(187, 34);
+            this.textBoxEx4.Size = new System.Drawing.Size(141, 29);
             this.textBoxEx4.TabIndex = 0;
             // 
             // textBoxEx2
             // 
             this.textBoxEx2.DecLength = 2;
             this.textBoxEx2.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx2.Location = new System.Drawing.Point(139, 185);
-            this.textBoxEx2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEx2.Location = new System.Drawing.Point(104, 148);
             this.textBoxEx2.MaxValue = new decimal(new int[] {
             1000000,
             0,
@@ -725,15 +703,14 @@
             this.textBoxEx2.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.textBoxEx2.PromptText = "";
             this.textBoxEx2.RegexPattern = "";
-            this.textBoxEx2.Size = new System.Drawing.Size(187, 34);
+            this.textBoxEx2.Size = new System.Drawing.Size(141, 29);
             this.textBoxEx2.TabIndex = 0;
             // 
             // textBoxEx3
             // 
             this.textBoxEx3.DecLength = 2;
             this.textBoxEx3.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx3.Location = new System.Drawing.Point(139, 56);
-            this.textBoxEx3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEx3.Location = new System.Drawing.Point(104, 45);
             this.textBoxEx3.MaxValue = new decimal(new int[] {
             1000000,
             0,
@@ -751,15 +728,14 @@
             this.textBoxEx3.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.textBoxEx3.PromptText = "";
             this.textBoxEx3.RegexPattern = "";
-            this.textBoxEx3.Size = new System.Drawing.Size(187, 34);
+            this.textBoxEx3.Size = new System.Drawing.Size(141, 29);
             this.textBoxEx3.TabIndex = 0;
             // 
             // textBoxEx1
             // 
             this.textBoxEx1.DecLength = 2;
             this.textBoxEx1.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx1.Location = new System.Drawing.Point(139, 120);
-            this.textBoxEx1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEx1.Location = new System.Drawing.Point(104, 96);
             this.textBoxEx1.MaxValue = new decimal(new int[] {
             1000000,
             0,
@@ -777,18 +753,16 @@
             this.textBoxEx1.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.textBoxEx1.PromptText = "";
             this.textBoxEx1.RegexPattern = "";
-            this.textBoxEx1.Size = new System.Drawing.Size(187, 34);
+            this.textBoxEx1.Size = new System.Drawing.Size(141, 29);
             this.textBoxEx1.TabIndex = 0;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.ucBtnExt2);
             this.groupBox1.Controls.Add(this.ucBtnExt1);
-            this.groupBox1.Location = new System.Drawing.Point(8, 8);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1053, 144);
+            this.groupBox1.Size = new System.Drawing.Size(790, 115);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "TXT - 封 装";
@@ -808,12 +782,12 @@
             this.ucBtnExt2.IsRadius = true;
             this.ucBtnExt2.IsShowRect = true;
             this.ucBtnExt2.IsShowTips = false;
-            this.ucBtnExt2.Location = new System.Drawing.Point(779, 45);
+            this.ucBtnExt2.Location = new System.Drawing.Point(584, 36);
             this.ucBtnExt2.Margin = new System.Windows.Forms.Padding(0);
             this.ucBtnExt2.Name = "ucBtnExt2";
             this.ucBtnExt2.RectColor = System.Drawing.Color.Gold;
             this.ucBtnExt2.RectWidth = 1;
-            this.ucBtnExt2.Size = new System.Drawing.Size(245, 75);
+            this.ucBtnExt2.Size = new System.Drawing.Size(184, 60);
             this.ucBtnExt2.TabIndex = 1;
             this.ucBtnExt2.TabStop = false;
             this.ucBtnExt2.TipsColor = System.Drawing.Color.Gold;
@@ -835,12 +809,12 @@
             this.ucBtnExt1.IsRadius = true;
             this.ucBtnExt1.IsShowRect = true;
             this.ucBtnExt1.IsShowTips = false;
-            this.ucBtnExt1.Location = new System.Drawing.Point(33, 48);
+            this.ucBtnExt1.Location = new System.Drawing.Point(25, 38);
             this.ucBtnExt1.Margin = new System.Windows.Forms.Padding(0);
             this.ucBtnExt1.Name = "ucBtnExt1";
             this.ucBtnExt1.RectColor = System.Drawing.Color.LawnGreen;
             this.ucBtnExt1.RectWidth = 1;
-            this.ucBtnExt1.Size = new System.Drawing.Size(260, 72);
+            this.ucBtnExt1.Size = new System.Drawing.Size(195, 58);
             this.ucBtnExt1.TabIndex = 0;
             this.ucBtnExt1.TabStop = false;
             this.ucBtnExt1.TipsColor = System.Drawing.Color.LawnGreen;
@@ -853,70 +827,23 @@
             this.tabPage2.Controls.Add(this.ucBtnExt10);
             this.tabPage2.Controls.Add(this.ucBtnExt9);
             this.tabPage2.Location = new System.Drawing.Point(4, 54);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1086, 552);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Size = new System.Drawing.Size(812, 430);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "CSV操作-封装";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // dataGridView1
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 54);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1086, 552);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Halcon-调用";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 54);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1086, 552);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "OpenCV-调用";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 54);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1086, 552);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "DataGiredView";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // ucBtnExt9
-            // 
-            this.ucBtnExt9.BackColor = System.Drawing.Color.Transparent;
-            this.ucBtnExt9.BtnBackColor = System.Drawing.Color.White;
-            this.ucBtnExt9.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ucBtnExt9.BtnForeColor = System.Drawing.Color.White;
-            this.ucBtnExt9.BtnText = "写 入 CSV";
-            this.ucBtnExt9.ConerRadius = 5;
-            this.ucBtnExt9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ucBtnExt9.EnabledMouseEffect = false;
-            this.ucBtnExt9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
-            this.ucBtnExt9.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ucBtnExt9.IsRadius = true;
-            this.ucBtnExt9.IsShowRect = true;
-            this.ucBtnExt9.IsShowTips = false;
-            this.ucBtnExt9.Location = new System.Drawing.Point(36, 469);
-            this.ucBtnExt9.Margin = new System.Windows.Forms.Padding(0);
-            this.ucBtnExt9.Name = "ucBtnExt9";
-            this.ucBtnExt9.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
-            this.ucBtnExt9.RectWidth = 1;
-            this.ucBtnExt9.Size = new System.Drawing.Size(184, 60);
-            this.ucBtnExt9.TabIndex = 0;
-            this.ucBtnExt9.TabStop = false;
-            this.ucBtnExt9.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
-            this.ucBtnExt9.TipsText = "";
-            this.ucBtnExt9.BtnClick += new System.EventHandler(this.ucBtnExt9_BtnClick);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(18, 6);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 27;
+            this.dataGridView1.Size = new System.Drawing.Size(791, 354);
+            this.dataGridView1.TabIndex = 1;
             // 
             // ucBtnExt10
             // 
@@ -933,35 +860,234 @@
             this.ucBtnExt10.IsRadius = true;
             this.ucBtnExt10.IsShowRect = true;
             this.ucBtnExt10.IsShowTips = false;
-            this.ucBtnExt10.Location = new System.Drawing.Point(895, 469);
+            this.ucBtnExt10.Location = new System.Drawing.Point(671, 375);
             this.ucBtnExt10.Margin = new System.Windows.Forms.Padding(0);
             this.ucBtnExt10.Name = "ucBtnExt10";
             this.ucBtnExt10.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
             this.ucBtnExt10.RectWidth = 1;
-            this.ucBtnExt10.Size = new System.Drawing.Size(184, 60);
+            this.ucBtnExt10.Size = new System.Drawing.Size(138, 48);
             this.ucBtnExt10.TabIndex = 0;
             this.ucBtnExt10.TabStop = false;
             this.ucBtnExt10.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
             this.ucBtnExt10.TipsText = "";
             this.ucBtnExt10.BtnClick += new System.EventHandler(this.ucBtnExt10_BtnClick);
             // 
-            // dataGridView1
+            // ucBtnExt9
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 7);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(1055, 442);
-            this.dataGridView1.TabIndex = 1;
+            this.ucBtnExt9.BackColor = System.Drawing.Color.White;
+            this.ucBtnExt9.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt9.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt9.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt9.BtnText = "写 入 CSV";
+            this.ucBtnExt9.ConerRadius = 5;
+            this.ucBtnExt9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt9.EnabledMouseEffect = false;
+            this.ucBtnExt9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(59)))));
+            this.ucBtnExt9.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt9.IsRadius = true;
+            this.ucBtnExt9.IsShowRect = true;
+            this.ucBtnExt9.IsShowTips = false;
+            this.ucBtnExt9.Location = new System.Drawing.Point(27, 375);
+            this.ucBtnExt9.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt9.Name = "ucBtnExt9";
+            this.ucBtnExt9.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.ucBtnExt9.RectWidth = 1;
+            this.ucBtnExt9.Size = new System.Drawing.Size(138, 48);
+            this.ucBtnExt9.TabIndex = 0;
+            this.ucBtnExt9.TabStop = false;
+            this.ucBtnExt9.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucBtnExt9.TipsText = "";
+            this.ucBtnExt9.BtnClick += new System.EventHandler(this.ucBtnExt9_BtnClick);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 54);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(812, 430);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Halcon-调用";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 54);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(812, 430);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "OpenCV-调用";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.ucBtnExt15);
+            this.tabPage5.Controls.Add(this.ucBtnExt14);
+            this.tabPage5.Controls.Add(this.ucBtnExt12);
+            this.tabPage5.Controls.Add(this.ucBtnExt13);
+            this.tabPage5.Controls.Add(this.ucBtnExt11);
+            this.tabPage5.Controls.Add(this.dataGridView2);
+            this.tabPage5.Location = new System.Drawing.Point(4, 54);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(812, 430);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "DataGiredView";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
+            // 
+            // ucBtnExt11
+            // 
+            this.ucBtnExt11.BackColor = System.Drawing.Color.Transparent;
+            this.ucBtnExt11.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt11.BtnFont = new System.Drawing.Font("微软雅黑", 20F, System.Drawing.FontStyle.Bold);
+            this.ucBtnExt11.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt11.BtnText = "创 建 表 头";
+            this.ucBtnExt11.ConerRadius = 5;
+            this.ucBtnExt11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt11.EnabledMouseEffect = false;
+            this.ucBtnExt11.FillColor = System.Drawing.Color.Gold;
+            this.ucBtnExt11.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt11.IsRadius = true;
+            this.ucBtnExt11.IsShowRect = true;
+            this.ucBtnExt11.IsShowTips = false;
+            this.ucBtnExt11.Location = new System.Drawing.Point(11, 368);
+            this.ucBtnExt11.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt11.Name = "ucBtnExt11";
+            this.ucBtnExt11.RectColor = System.Drawing.Color.Gold;
+            this.ucBtnExt11.RectWidth = 1;
+            this.ucBtnExt11.Size = new System.Drawing.Size(162, 52);
+            this.ucBtnExt11.TabIndex = 1;
+            this.ucBtnExt11.TabStop = false;
+            this.ucBtnExt11.TipsColor = System.Drawing.Color.Gold;
+            this.ucBtnExt11.TipsText = "";
+            this.ucBtnExt11.BtnClick += new System.EventHandler(this.ucBtnExt11_BtnClick);
+            // 
+            // ucBtnExt12
+            // 
+            this.ucBtnExt12.BackColor = System.Drawing.Color.White;
+            this.ucBtnExt12.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt12.BtnFont = new System.Drawing.Font("微软雅黑", 20F, System.Drawing.FontStyle.Bold);
+            this.ucBtnExt12.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt12.BtnText = "插 入 一 行";
+            this.ucBtnExt12.ConerRadius = 5;
+            this.ucBtnExt12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt12.EnabledMouseEffect = false;
+            this.ucBtnExt12.FillColor = System.Drawing.Color.LawnGreen;
+            this.ucBtnExt12.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt12.IsRadius = true;
+            this.ucBtnExt12.IsShowRect = true;
+            this.ucBtnExt12.IsShowTips = false;
+            this.ucBtnExt12.Location = new System.Drawing.Point(192, 368);
+            this.ucBtnExt12.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt12.Name = "ucBtnExt12";
+            this.ucBtnExt12.RectColor = System.Drawing.Color.LawnGreen;
+            this.ucBtnExt12.RectWidth = 1;
+            this.ucBtnExt12.Size = new System.Drawing.Size(162, 52);
+            this.ucBtnExt12.TabIndex = 1;
+            this.ucBtnExt12.TabStop = false;
+            this.ucBtnExt12.TipsColor = System.Drawing.Color.LawnGreen;
+            this.ucBtnExt12.TipsText = "";
+            this.ucBtnExt12.BtnClick += new System.EventHandler(this.ucBtnExt12_BtnClick);
+            // 
+            // ucBtnExt13
+            // 
+            this.ucBtnExt13.BackColor = System.Drawing.Color.White;
+            this.ucBtnExt13.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt13.BtnFont = new System.Drawing.Font("微软雅黑", 20F, System.Drawing.FontStyle.Bold);
+            this.ucBtnExt13.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt13.BtnText = "删 除 一 行";
+            this.ucBtnExt13.ConerRadius = 5;
+            this.ucBtnExt13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt13.EnabledMouseEffect = false;
+            this.ucBtnExt13.FillColor = System.Drawing.Color.Gold;
+            this.ucBtnExt13.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt13.IsRadius = true;
+            this.ucBtnExt13.IsShowRect = true;
+            this.ucBtnExt13.IsShowTips = false;
+            this.ucBtnExt13.Location = new System.Drawing.Point(370, 368);
+            this.ucBtnExt13.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt13.Name = "ucBtnExt13";
+            this.ucBtnExt13.RectColor = System.Drawing.Color.Gold;
+            this.ucBtnExt13.RectWidth = 1;
+            this.ucBtnExt13.Size = new System.Drawing.Size(162, 52);
+            this.ucBtnExt13.TabIndex = 1;
+            this.ucBtnExt13.TabStop = false;
+            this.ucBtnExt13.TipsColor = System.Drawing.Color.Gold;
+            this.ucBtnExt13.TipsText = "";
+            this.ucBtnExt13.BtnClick += new System.EventHandler(this.ucBtnExt13_BtnClick);
+            // 
+            // ucBtnExt14
+            // 
+            this.ucBtnExt14.BackColor = System.Drawing.Color.White;
+            this.ucBtnExt14.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt14.BtnFont = new System.Drawing.Font("微软雅黑", 20F, System.Drawing.FontStyle.Bold);
+            this.ucBtnExt14.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt14.BtnText = "修 改 一 行";
+            this.ucBtnExt14.ConerRadius = 5;
+            this.ucBtnExt14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt14.EnabledMouseEffect = false;
+            this.ucBtnExt14.FillColor = System.Drawing.Color.LawnGreen;
+            this.ucBtnExt14.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt14.IsRadius = true;
+            this.ucBtnExt14.IsShowRect = true;
+            this.ucBtnExt14.IsShowTips = false;
+            this.ucBtnExt14.Location = new System.Drawing.Point(549, 368);
+            this.ucBtnExt14.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt14.Name = "ucBtnExt14";
+            this.ucBtnExt14.RectColor = System.Drawing.Color.LawnGreen;
+            this.ucBtnExt14.RectWidth = 1;
+            this.ucBtnExt14.Size = new System.Drawing.Size(162, 52);
+            this.ucBtnExt14.TabIndex = 1;
+            this.ucBtnExt14.TabStop = false;
+            this.ucBtnExt14.TipsColor = System.Drawing.Color.LawnGreen;
+            this.ucBtnExt14.TipsText = "";
+            this.ucBtnExt14.BtnClick += new System.EventHandler(this.ucBtnExt14_BtnClick);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.Gray;
+            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridView2.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 23;
+            this.dataGridView2.Size = new System.Drawing.Size(812, 365);
+            this.dataGridView2.TabIndex = 0;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // ucBtnExt15
+            // 
+            this.ucBtnExt15.BackColor = System.Drawing.Color.Transparent;
+            this.ucBtnExt15.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt15.BtnFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.ucBtnExt15.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt15.BtnText = "删 除";
+            this.ucBtnExt15.ConerRadius = 5;
+            this.ucBtnExt15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt15.EnabledMouseEffect = false;
+            this.ucBtnExt15.FillColor = System.Drawing.Color.Red;
+            this.ucBtnExt15.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt15.IsRadius = true;
+            this.ucBtnExt15.IsShowRect = true;
+            this.ucBtnExt15.IsShowTips = false;
+            this.ucBtnExt15.Location = new System.Drawing.Point(728, 368);
+            this.ucBtnExt15.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt15.Name = "ucBtnExt15";
+            this.ucBtnExt15.RectColor = System.Drawing.Color.Red;
+            this.ucBtnExt15.RectWidth = 1;
+            this.ucBtnExt15.Size = new System.Drawing.Size(81, 52);
+            this.ucBtnExt15.TabIndex = 2;
+            this.ucBtnExt15.TabStop = false;
+            this.ucBtnExt15.TipsColor = System.Drawing.Color.Red;
+            this.ucBtnExt15.TipsText = "";
+            this.ucBtnExt15.BtnClick += new System.EventHandler(this.ucBtnExt15_BtnClick);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1111, 629);
+            this.ClientSize = new System.Drawing.Size(827, 503);
             this.Controls.Add(this.tabControlExt1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -976,6 +1102,8 @@
             this.groupBox1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1027,5 +1155,11 @@
         private HZH_Controls.Controls.UCBtnExt ucBtnExt9;
         private HZH_Controls.Controls.UCBtnExt ucBtnExt10;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private HZH_Controls.Controls.UCBtnExt ucBtnExt14;
+        private HZH_Controls.Controls.UCBtnExt ucBtnExt12;
+        private HZH_Controls.Controls.UCBtnExt ucBtnExt13;
+        private HZH_Controls.Controls.UCBtnExt ucBtnExt11;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private HZH_Controls.Controls.UCBtnExt ucBtnExt15;
     }
 }
