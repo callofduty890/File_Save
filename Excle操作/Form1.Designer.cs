@@ -90,6 +90,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "提交";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox5
             // 
@@ -124,6 +125,7 @@
             this.button5.TabIndex = 12;
             this.button5.Text = "插 入";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label4
             // 
@@ -143,6 +145,7 @@
             this.button6.TabIndex = 13;
             this.button6.Text = "删 除";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // textBox2
             // 
@@ -194,6 +197,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Enabled = false;
             this.groupBox1.Font = new System.Drawing.Font("微软雅黑", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox1.Location = new System.Drawing.Point(11, 606);
             this.groupBox1.Name = "groupBox1";
@@ -237,6 +241,7 @@
             this.button7.TabIndex = 14;
             this.button7.Text = "修 改";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Form1
             // 
