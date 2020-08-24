@@ -31,5 +31,14 @@ namespace Excle操作
 
             Excel.Upadate(sql, filePath);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //Excel地址
+            var filePath = "Excel表格.xls";
+            //SQL语句
+            string sql = "select 学号,姓名,班级,电话号码 from [学生信息$] where 状态='正常' ";
+            this.dataGridView1.DataSource = Excel.GetDataTable(sql, filePath);
+        }
     }
 }

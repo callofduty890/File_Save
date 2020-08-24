@@ -60,6 +60,7 @@
             this.button4.TabIndex = 11;
             this.button4.Text = "查 询";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // dataGridView1
             // 
